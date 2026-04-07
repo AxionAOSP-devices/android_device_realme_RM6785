@@ -120,9 +120,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_RM6785)
 
-# JDSP
-$(call inherit-product, packages/apps/JamesDSPManager/config.mk)
-
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_ENABLE_UFFD_GC := true
@@ -356,9 +353,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libui-v32
-
-# V4A
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
